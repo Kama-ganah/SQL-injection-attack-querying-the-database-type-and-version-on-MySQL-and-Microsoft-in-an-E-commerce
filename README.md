@@ -1,7 +1,7 @@
 # Overview
 During testing of the product listing functionality, a high-severity SQL Injection vulnerability was identified in the category filter parameter. By manipulating this parameter, it was possible to inject UNION-based SQL payloads and retrieve backend database metadata, including the database type and version. The flaw affected both MySQL and Microsoft SQL Server backends, demonstrating insufficient input validation and unsafe query construction.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Intercepted the product filter request containing the category parameter using Burp Suite.
 
